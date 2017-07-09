@@ -129,8 +129,8 @@ int main(int argc, const char *argv[])
         puts(" -a <id>           Video ID on arte 7+ URL\n -q <quality_id>   Video quality (use -i for view all quality)\n -l <language>     Selecte json language (fr and de)\n -o <folder>       Output directory\n -s <player>       Output stream\n -i                Video informations\n -v                Verbose option (-vv for Debug)\n -h                Print this help\n");
         puts("Examples:");
         puts("ArteNDL -a 000000-000-A -i                                   Print video informations quality/language");
-        puts("ArteNDL -a 000000-000-A -q HTTP_MP4_MQ_1 -s \"mplayer -fs\"    Open video on mplayer in fullscreen");
-        puts("ArteNDL -a 000000-000-A -q HTTP_MP4_MQ_1 -o /tmp/arteout/    Download video inside arteout folder\n");
+        puts("ArteNDL -a 000000-000-A -q HTTPS_MP4_MQ_1 -s \"mplayer -fs\"    Open video on mplayer in fullscreen");
+        puts("ArteNDL -a 000000-000-A -q HTTPS_MP4_MQ_1 -o /tmp/arteout/    Download video inside arteout folder\n");
         goto exitError;
     }
 
@@ -326,7 +326,7 @@ void jsonParser(char *data, char *mother)
                 printInfos(key, (int*)json_object_get_int(val));
 				break;
 			case json_type_string:
-                if(strn_equal("HTTP_", mother, (size_t)5) && str_equal("versionLibelle", key)) {
+                if(strn_equal("HTTPS_", mother, (size_t)5) && str_equal("versionLibelle", key)) {
                     printInfos("Dispo", argCpy(JSON_GET_SVALUE, " \n"));
                 } else if(str_equal("VRU", key)) {
                     printInfos("lastChance", JSON_GET_SVALUE);
@@ -344,7 +344,7 @@ void jsonParser(char *data, char *mother)
                 printInfos(key, JSON_GET_SVALUE);
 				break;
 			case json_type_object:
-                if(strn_equal("HTTP_", key, (size_t)5))
+                if(strn_equal("HTTPS_", key, (size_t)5))
                     printInfos("Dispo", argCpy(key, ": "));
 
 				jsonParser(JSON_GET_SVALUE, key);
