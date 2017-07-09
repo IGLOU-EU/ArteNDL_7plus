@@ -1,7 +1,7 @@
 # ArteNatifDownLoader (ArteNDL)
 Arte 7+ Natif DownLoader writed in C
 
-Current version: **1**.
+Current version: **1.1**.
 
 DESCRIPTION
 ---
