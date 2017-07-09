@@ -1,11 +1,7 @@
-#![Arte logo](https://static-cdn.arte.tv/guide/favicons/favicon-96x96.png) **ArteNatifDownLoader (ArteNDL)**
-
-----------
+# ![Arte logo](https://static-cdn.arte.tv/guide/favicons/favicon-96x96.png) **ArteNatifDownLoader (ArteNDL)**
 
 > Arte Natif DownLoader is writed on C
 Current version is **1.1** (07/2017)
-
-----------
 
 :page_with_curl: **DESCRIPTION** 
 ---
@@ -14,7 +10,6 @@ It's working properly for other Arte video content, but i didn't try everything.
 
 You can also use it like streamer view with mpv, vlc, or whatever.
 
-----------
 :rocket: **HOW TO** 
 ---
 Go to http://www.arte.tv and choose you'r video.
@@ -56,7 +51,6 @@ Print help:
 
     $ ./ArteNDL -h;
 
-----------
 :construction: **INSTALLATION** 
 ---
 Lib required: **json-c**, **curl**;
@@ -66,7 +60,6 @@ Clone repository, or download ArteNDL.c
 Compilation: **$ gcc ArteNDL.c -lcurl -ljson-c -o ArteNDL**
 Tested on: **Gnu/Linux** [32/64bit] and **OpenBSD** 5.1+
 
-----------
 :question: **FAQ** 
 ---
 **When I should use this program ?**
@@ -83,7 +76,6 @@ I like Arte this is my favorite channel.
 But, my computer is too old (2001) to look Arte.tv,
 And I don't have a TV !
 
-----------
 :shipit: **DISCLAIMER** 
 -------
 This program is for personal use only. You alone have the responsability for any usage which could be against ARTE privacy policy.
