@@ -71,10 +71,10 @@ Tested on: **Gnu/Linux** [32/64bit] and **OpenBSD** 5.1+
 You can download videos to later, or stream in a lite video player =D
 
 **Why Arte ?**
-
-I like Arte this is my favorite channel.  
-But, my computer is too old (2001) to look Arte.tv,  
-And I don't have a TV !
+   
+* I like Arte this is my favorite channel
+* But, my computer is too old (2001) to look Arte.tv
+* And I don't have a TV !
 
 :shipit: **DISCLAIMER** 
 -------
